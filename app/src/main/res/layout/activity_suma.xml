@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteY="1dp">
 
         <EditText
-            android:id="@+id/editTextNumberTotal"
+            android:id="@+id/editTextNumberX"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -28,7 +28,7 @@
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editTextNumberX"
+            android:id="@+id/editTextNumberTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

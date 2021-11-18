@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonSuma;
+    private Button buttonResta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,22 @@ public class MainActivity extends AppCompatActivity {
                 abrirSuma();
             }
         });
+        buttonResta = findViewById(R.id.buttonResta);
+        buttonResta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirResta();
+            }
+        });
     }
 
     private void abrirSuma(){
         Intent Intent = new Intent(this, SumaActivity.class);
+        startActivity(Intent);
+    }
+
+    private void abrirResta(){
+        Intent Intent = new Intent(this, RestaActivity.class);
         startActivity(Intent);
     }
 }
