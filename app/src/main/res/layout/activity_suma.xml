@@ -13,6 +13,19 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUMA"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número 1" />
+
         <EditText
             android:id="@+id/editTextNumberX"
             android:layout_width="match_parent"
@@ -20,12 +33,24 @@
             android:ems="10"
             android:inputType="number" />
 
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número 2" />
+
         <EditText
             android:id="@+id/editTextNumberY"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado" />
 
         <EditText
             android:id="@+id/editTextNumberTotal"

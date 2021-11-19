@@ -10,6 +10,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button buttonSuma;
     private Button buttonResta;
+    private Button buttonMultiplicacion;
+    private Button buttonDivision;
+    private Button buttonCoseno;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,33 @@ public class MainActivity extends AppCompatActivity {
                 abrirResta();
             }
         });
+        buttonMultiplicacion = findViewById(R.id.buttonMultiplicacion);
+        buttonMultiplicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirMultiplicacion();
+            }
+        });
+        buttonDivision = findViewById(R.id.buttonDivision);
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirDivision();
+            }
+        });
+        buttonCoseno = findViewById(R.id.buttonCoseno);
+        buttonCoseno.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirCoseno();
+            }
+        });
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 
     private void abrirSuma(){
@@ -39,6 +69,21 @@ public class MainActivity extends AppCompatActivity {
 
     private void abrirResta(){
         Intent Intent = new Intent(this, RestaActivity.class);
+        startActivity(Intent);
+    }
+
+    private void abrirMultiplicacion(){
+        Intent Intent = new Intent(this, MultiplicacionActivity.class);
+        startActivity(Intent);
+    }
+
+    private void abrirDivision(){
+        Intent Intent = new Intent(this, DivisionActivity.class);
+        startActivity(Intent);
+    }
+
+    private void abrirCoseno(){
+        Intent Intent = new Intent(this, CosenoActivity.class);
         startActivity(Intent);
     }
 }

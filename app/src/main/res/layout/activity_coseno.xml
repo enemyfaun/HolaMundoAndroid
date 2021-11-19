@@ -14,17 +14,17 @@
         tools:layout_editor_absoluteY="1dp">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RESTA"
+            android:text="COSENO DE GRADOS SEXAGESIMALES"
             android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Número 1" />
+            android:text="Grados" />
 
         <EditText
             android:id="@+id/editTextNumberX"
@@ -33,21 +33,14 @@
             android:ems="10"
             android:inputType="number" />
 
-        <TextView
-            android:id="@+id/textView6"
+        <Button
+            android:id="@+id/buttonCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Número 2" />
-
-        <EditText
-            android:id="@+id/editTextNumberY"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number" />
+            android:text="CALCULAR" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Resultado" />
