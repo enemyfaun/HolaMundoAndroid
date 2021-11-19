@@ -22,56 +22,56 @@
 
     <Button
         android:id="@+id/buttonSuma"
-        android:layout_width="100dp"
+        android:layout_width="170dp"
         android:layout_height="100dp"
         android:text="Suma"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247" />
-
-    <Button
-        android:id="@+id/buttonResta"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="RESTA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.247" />
 
     <Button
         android:id="@+id/buttonMultiplicacion"
-        android:layout_width="100dp"
+        android:layout_width="170dp"
         android:layout_height="100dp"
         android:autoText="false"
         android:text="MULTIPLICACIÓN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.459" />
 
     <Button
+        android:id="@+id/buttonResta"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:text="RESTA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <Button
         android:id="@+id/buttonDivision"
-        android:layout_width="100dp"
+        android:layout_width="170dp"
         android:layout_height="100dp"
         android:text="DIVISIÓN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.459" />
 
     <Button
         android:id="@+id/buttonCoseno"
-        android:layout_width="100dp"
+        android:layout_width="170dp"
         android:layout_height="100dp"
         android:text="COSENO"
         app:layout_constraintBottom_toBottomOf="parent"
