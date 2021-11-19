@@ -16,7 +16,7 @@ public class MultiplicacionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suma);
+        setContentView(R.layout.activity_multiplicacion);
 
         editTextX = findViewById(R.id.editTextNumberX);
         editTextY = findViewById(R.id.editTextNumberY);

@@ -12,16 +12,18 @@ public class CosenoActivity extends AppCompatActivity {
 
     private EditText editTextX;
     private EditText editTextTotal;
-    private Button buttonResultado;
+    private Button buttonCalcular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suma);
+        setContentView(R.layout.activity_coseno);
 
         editTextX = findViewById(R.id.editTextNumberX);
         editTextTotal = findViewById(R.id.editTextNumberTotal);
-        editTextX.setOnClickListener(new View.OnClickListener() {
+
+        buttonCalcular = findViewById(R.id.buttonCalcular);
+        buttonCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 realizaOperacion();
@@ -34,10 +36,11 @@ public class CosenoActivity extends AppCompatActivity {
         if(editTextX.getText().toString() != null){
             if( isEntero(editTextX.getText().toString())){
                 total = Math.cos(Math.toRadians(Double.parseDouble(editTextX.getText().toString())));
+                System.out.println(Math.cos(Math.toRadians(90)));
             }
         }
 
-        editTextTotal.setText(String.format("%d", total), TextView.BufferType.SPANNABLE);
+        editTextTotal.setText(String.valueOf(total));
         editTextTotal.setEnabled(false);
     }
 

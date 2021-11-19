@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
     private void abrirMultiplicacion(){
         Intent Intent = new Intent(this, MultiplicacionActivity.class);
         startActivity(Intent);
+                System.out.println("ctm");
     }
 
     private void abrirDivision(){

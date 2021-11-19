@@ -16,7 +16,7 @@ public class DivisionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suma);
+        setContentView(R.layout.activity_division);
 
         editTextX = findViewById(R.id.editTextNumberX);
         editTextY = findViewById(R.id.editTextNumberY);
@@ -40,20 +40,20 @@ public class DivisionActivity extends AppCompatActivity {
     }
 
     private void realizaOperacion(){
-        int total = 0;
+        double total = 0;
         if(editTextX.getText().toString() != null){
             if( isEntero(editTextX.getText().toString())){
-                total += getEntero(editTextX.getText().toString());
+                total += Double.parseDouble(editTextX.getText().toString());
             }
         }
 
         if(editTextY.getText().toString() != null){
             if( isEntero(editTextY.getText().toString()) && !editTextY.getText().toString().equals("0")){
-                total /= getEntero(editTextY.getText().toString());
+                total /= Double.parseDouble(editTextY.getText().toString());
             }
         }
 
-        editTextTotal.setText(String.format("%d", total), TextView.BufferType.SPANNABLE);
+        editTextTotal.setText(String.valueOf(total));
         editTextTotal.setEnabled(false);
     }
 
